@@ -221,7 +221,7 @@ img {
 /* =================================OUR TEAM=============================== */
 .our-team .container {
   background: #f5f4fa;
-  padding: 94px;
+  padding: 94px 0px;
 }
 .our-team-title {
   font-weight: 700;
@@ -267,9 +267,19 @@ img {
 .footer {
   background: #2f303a;
 }
+.footer .container {
+  padding: 60px 0px;
+}
+.linklogo {
+  display: block;
+  padding-bottom: 10px;
+}
 .adress {
   font-size: 14px;
   line-height: 1.71;
+}
+.adress-item {
+  padding-bottom: 9px;
 }
 .adress-p {
   color: #ffffff;
@@ -279,24 +289,45 @@ img {
   font-style: normal;
 }
 /* ======================================PORTFOLIO============================ */
-
+.filters-list {
+  display: flex;
+  justify-content: center;
+}
 .filters-item {
-  padding: 5px;
+  margin-top: 94px;
+  margin-bottom: 34px;
 }
 .filters-button {
-  /* font-weight: 500; */
+  font-weight: 500;
   font-size: 16px;
-  text-align: center;
-  /* letter-spacing: 0.03em; */
   color: #212121;
   background: #f5f4fa;
   border-radius: 4px;
   border: none;
+  padding: 8px 22px;
 }
 .filters-button:hover {
   cursor: pointer;
 }
-
+/* ==========================PORTFOLIO========================= */
+.portfolio-projects {
+  margin-bottom: 94px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: 30px;
+}
+.portfolio-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.portfolio-content {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -307,5 +338,4 @@ img {
 .portfolio-desk {
   font-size: 16px;
   line-height: 1.87;
-  /* letter-spacing: 0.03em; */
 }
