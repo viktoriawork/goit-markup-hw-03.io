@@ -51,7 +51,9 @@ img {
   padding-bottom: 24px;
   justify-content: space-between;
 }
-
+.header {
+  border-bottom: 1px solid rgb(117, 117, 117, 0.5);
+}
 .navigation {
   display: flex;
   align-items: center;
@@ -215,7 +217,7 @@ img {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 /* =================================OUR TEAM=============================== */
@@ -294,8 +296,8 @@ img {
   justify-content: center;
 }
 .filters-item {
-  margin-top: 94px;
-  margin-bottom: 34px;
+  padding-top: 94px;
+  padding-bottom: 34px;
 }
 .filters-button {
   font-weight: 500;
@@ -311,7 +313,7 @@ img {
 }
 /* ==========================PORTFOLIO========================= */
 .portfolio-projects {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .portfolio-list {
   display: flex;
