@@ -31,7 +31,7 @@
             <li class="menu-item"><a href="" class="menu-link">Контакты</a></li>
           </ul>
         </nav>
-        <div>
+        <div class="contacts-head">
           <ul class="contacts list">
             <li class="contacts-item">
               <a href="mailto:info@devstudio.com" class="contact-link"
@@ -51,33 +51,29 @@
 
     <!-- Main container -->
     <main>
-
-       <!-- --------------------- Header container-------------------- -->
+      <!-- --------------------- Header container-------------------- -->
       <div class="container">
-     
-      <section class="header-box">
-        <h1 class="header-title section-title">
-          Эффективные решения<br />
-          для вашего бизнеса
-        </h1>
-        <button type="button" class="button button-order">
-          Заказать услугу
-        </button>
-      </section>
-   </div>
-      
-        <!-- Оur features -->
-        
-          <div class="container">
-            <section class="features">
+        <section class="header-box">
+          <h1 class="header-title section-title">
+            Эффективные решения для вашего бизнеса
+          </h1>
+          <button type="button" class="button button-order">
+            Заказать услугу
+          </button>
+        </section>
+      </div>
+
+      <!-- Оur features -->
+
+      <section class="features">
+        <div class="container">
           <ul class="features-list list">
             <!-- Feature 1 -->
             <li class="features-item">
-              <h3 class="features-title ">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+              <h3 class="features-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
 
               <p class="features-par">
-                Идейные соображения, а также 
-                начало повседневной работы по
+                Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
@@ -108,15 +104,15 @@
               </p>
             </li>
           </ul>
-          </section>
-          </div>
-        
+        </div>
+      </section>
 
-        <!-- WHAT WE DO -->
-        <section class="what-we-do ">
+      <!-- =============================WHAT WE DO=========================== -->
+      <section class="what-we-do">
+        <div class="container">
           <h2 class="what-we-do-title section-title">Чем мы занимаемся</h2>
           <ul class="what-we-do-list list">
-            <li>
+            <li class="what-we-do-item">
               <img
                 src="images/imglaptop1.jpg"
                 alt="Написание кода"
@@ -124,7 +120,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="what-we-do-item">
               <img
                 src="images/imglaptop2.jpg"
                 alt="Телефон в руке"
@@ -132,7 +128,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="what-we-do-item">
               <img
                 src="images/imgtablet3.jpg"
                 alt="Цветовая палитра на планшете"
@@ -141,61 +137,72 @@
               />
             </li>
           </ul>
-        </section>
+        </div>
       </section>
-      <!-- Our team -->
+
+      <!-- ==================================Our team ==============================-->
       <section class="our-team">
-        <h2 class="our-team-title section title">Наша команда</h2>
-        <ul class="our-team-list list">
-          <!-- Igor -->
-          <li class="our-team-item">
-            <img
-              class="our-team-img"
-              width="270"
-              height="260"
-              src="images/imgigor1.jpg"
-              alt=" Игорь Демьяненко"
-            />
-            <h3 class="our-team-name">Игорь Демьяненко</h3>
-            <p class="our-team-job">Product Designer</p>
-          </li>
-          <!-- Olga -->
-          <li class="our-team-item">
-            <img
-              class="our-team-img"
-              src="images/imgolga2.jpg"
-              alt=" Ольга Репина"
-              width="270"
-              height="260"
-            />
-            <h3 class="our-team-name">Ольга Репина</h3>
-            <p class="our-team-job">Frontend Developer</p>
-          </li>
-          <!-- Nikola -->
-          <li class="our-team-item">
-            <img
-              class="our-team-img"
-              src="images/imgnikola3.jpg"
-              alt=" Николай Тарасов"
-              width="270"
-              height="260"
-            />
-            <h3 class="our-team-name">Николай Тарасов</h3>
-            <p class="our-team-job">Marketing</p>
-          </li>
-          <!-- Misha -->
-          <li class="our-team-item">
-            <img
-              class="our-team-img"
-              src="images/imgmisha4.jpg"
-              alt=" Михаил Ермаков"
-              height="260"
-              width="270"
-            />
-            <h3 class="our-team-name">Михаил Ермаков</h3>
-            <p class="our-team-job">UI Designer</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="our-team-title section title">Наша команда</h2>
+          <ul class="our-team-list list">
+            <!-- Igor -->
+            <li class="our-team-item">
+              <img
+                class="our-team-img img"
+                width="270"
+                height="260"
+                src="images/imgigor1.jpg"
+                alt=" Игорь Демьяненко"
+              />
+              <div class="our-team-content">
+                <h3 class="our-team-name">Игорь Демьяненко</h3>
+                <p class="our-team-job">Product Designer</p>
+              </div>
+            </li>
+            <!-- Olga -->
+            <li class="our-team-item">
+              <img
+                class="our-team-img img"
+                src="images/imgolga2.jpg"
+                alt=" Ольга Репина"
+                width="270"
+                height="260"
+              />
+              <div class="our-team-content">
+                <h3 class="our-team-name">Ольга Репина</h3>
+                <p class="our-team-job">Frontend Developer</p>
+              </div>
+            </li>
+            <!-- Nikola -->
+            <li class="our-team-item">
+              <img
+                class="our-team-img img"
+                src="images/imgnikola3.jpg"
+                alt=" Николай Тарасов"
+                width="270"
+                height="260"
+              />
+              <div class="our-team-content">
+                <h3 class="our-team-name">Николай Тарасов</h3>
+                <p class="our-team-job">Marketing</p>
+              </div>
+            </li>
+            <!-- Misha -->
+            <li class="our-team-item">
+              <img
+                class="our-team-img img"
+                src="images/imgmisha4.jpg"
+                alt=" Михаил Ермаков"
+                height="260"
+                width="270"
+              />
+              <div class="our-team-content">
+                <h3 class="our-team-name">Михаил Ермаков</h3>
+                <p class="our-team-job">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 

@@ -49,6 +49,7 @@ img {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
+  justify-content: space-between;
 }
 
 .navigation {
@@ -67,19 +68,13 @@ img {
   margin-left: 50px;
 }
 
-.menu-link,
-.contacts-link {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-}
 .contacts {
   display: flex;
 }
-.contacts-item:first-child {
+
+/* .contacts-item:first-child {
   margin-left: 331px;
-}
+} */
 .header {
   background-color: #ffffff;
 }
@@ -131,17 +126,17 @@ img {
 .container .header-box {
   text-align: center;
 
-  padding: 200px 227px 200px;
+  padding: 200px 252px;
 }
 .header-box {
   background: #2f303a;
 }
+
 .header-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   padding-bottom: 30px;
-
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -153,6 +148,9 @@ img {
   letter-spacing: 0.06em;
   border: none;
   color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 10px 32px; */
 }
 .button:hover {
   cursor: pointer;
@@ -167,25 +165,22 @@ img {
 .central {
   background-color: #ffffff;
 }
-/* FEATURES */
-.container .features {
-  margin-top: 94px;
-  margin-bottom: 94px;
-  margin-left: 0;
-  margin-right: auto;
-}
-.features-item {
-  width: 270px;
-  height: 101px;
-}
-.features-item:not(:last-child) {
-  margin-right: 30px;
+/* ------------------------------FEATURES-------------------------------- */
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: 0px;
+  padding: 94px 0;
 }
 
-.container .features-list {
-  display: flex;
-  justify-content: flex-start;
+.features-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 0px;
 }
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -201,16 +196,30 @@ img {
   /* letter-spacing: 0.03em; */
   color: #757575;
 }
-/* What we do */
+/* ====================================What we do================================= */
+
 .what-we-do-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  /* letter-spacing: 0.03em; */
+  margin-bottom: 50px;
+  text-align: center;
+}
+.what-we-do-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.what-we-do-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 94px;
 }
 
-/* OUR TEAM */
-.our-team {
+/* =================================OUR TEAM=============================== */
+.our-team .container {
   background: #f5f4fa;
 }
 .our-team-title {
@@ -218,7 +227,26 @@ img {
   font-size: 36px;
   line-height: 1.16;
   color: #000;
-  /* letter-spacing: 0.03em; */
+  margin-bottom: 50px;
+  text-align: center;
+}
+.our-team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: 0px;
+}
+
+.our-team-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 0px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.our-team-content {
+  padding: 30px;
 }
 
 .our-team-name {
@@ -226,21 +254,22 @@ img {
   font-size: 16px;
   line-height: 1.18;
   color: #000;
-  /* letter-spacing: 0.03em; */
+  text-align: center;
+  margin-bottom: 10px;
 }
 .our-team-job {
   font-size: 16px;
   line-height: 1.18;
-  /* letter-spacing: 0.03em; */
   color: #757575;
+  text-align: center;
 }
+/* ========================FOOTER======================================= */
 .footer {
   background: #2f303a;
 }
 .adress {
   font-size: 14px;
   line-height: 1.71;
-  /* letter-spacing: 0.03em; */
 }
 .adress-p {
   color: #ffffff;
@@ -249,7 +278,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 }
-/* PORTFOLIO */
+/* ======================================PORTFOLIO============================ */
 
 .filters-item {
   padding: 5px;
