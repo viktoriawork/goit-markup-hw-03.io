@@ -222,8 +222,10 @@ img {
 }
 
 /* =================================OUR TEAM=============================== */
-.our-team .container {
+.our-team {
   background: #f5f4fa;
+}
+.our-team .container {
   padding: 94px 0px;
 }
 .our-team-title {
