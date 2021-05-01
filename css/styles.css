@@ -88,22 +88,33 @@ img {
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
-
+.site-nav .menu-link:hover,
+.site-nav .menu-link:focus {
+  color: var(--c-accent-color);
+}
+.site-nav .studio.current {
+  color: var(--c-accent-color);
+}
+.site-nav .portfolio.current {
+  color: var(--c-accent-color);
+}
 .menu-link {
   display: block;
-
   padding-top: 32px;
   padding-bottom: 32px;
 }
 .contacts {
   display: flex;
 }
-
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--c-accent-color);
+}
 /* .contacts-item:first-child {
   margin-left: 331px;
 } */
 .header {
-  background-color: #ffffff;
+  background-color: var(--c-background-color);
 }
 
 /* LOGO */
@@ -338,6 +349,8 @@ img {
   cursor: pointer;
   background-color: #2196f3;
   color: white;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* ==========================PORTFOLIO========================= */
 .portfolio-projects {
