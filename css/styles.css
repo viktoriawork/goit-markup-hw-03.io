@@ -84,6 +84,13 @@ img {
   font-weight: 500;
   font-size: 14px;
 }
+.icon-mail,
+.icon-smartphone {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
+}
 .contacts-item,
 .menu-item:not(:last-child) {
   margin-right: 50px;
