@@ -128,6 +128,10 @@ img {
 .contact-link:focus {
   color: var(--c-accent-color);
 }
+.contact-link:hover ,
+.contact-link:focus {
+  fill:var(--c-accent-color)
+}
 /* .contacts-item:first-child {
   margin-left: 331px;
 } */
@@ -175,6 +179,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--txt-main-color);
+}
+icon-mail:hover{
+  fill:var(--c-accent-color)
 }
 /* -------------------------------Main--------------------------------------- */
 
@@ -351,7 +358,7 @@ img {
   margin-top: 16px;
 }
 
-.circle {
+.social-link-list .circle {
   display: flex;
   margin-right: 10px;
   align-items: center;
@@ -419,9 +426,19 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .linklogo {
   display: block;
   padding-bottom: 10px;
+}
+.footer-cont{
+  display: flex;
+}
+.footer-left-side {
+  display: flex;
+   flex-direction: column;
+  margin-right: 70px;
+}
 }
 .adress {
   font-size: 14px;
@@ -437,6 +454,44 @@ img {
 .adress-contact {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
+}
+.join {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+}
+.join-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.join-list {
+  display: flex;
+}
+.join-item {
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.join-icon{
+  display: flex;
+align-items: center;
+justify-content: center;
+width: 44px;
+height: 44px;
+background: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+margin-right: 10px;
+}
+.join-icon-logo {
+  width: 20px;
+  height: 20px;
+  fill: rgb(255, 255, 255,0.1);
+ 
 }
 /* ======================================PORTFOLIO============================ */
 .section-pos.filters {
